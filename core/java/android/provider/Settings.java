@@ -4478,6 +4478,14 @@ public final class Settings {
          * the setting value. See an example above.
          */
 
+        /** @hide */
+        public static final String OMNI_BACK_GESTURE_HEIGHT = "back_gesture_height";
+
+        /** @hide */
+        private static final Validator OMNI_BACK_GESTURE_HEIGHT_VALIDATOR =
+                ANY_INTEGER_VALIDATOR;
+
+
         /**
          * Whether user can swap the order of the Alert Slider.
          * * Whether user can invert the order of the Alert Slider.
@@ -4691,6 +4699,7 @@ public final class Settings {
             DISPLAY_COLOR_MODE,
             ALARM_ALERT,
             NOTIFICATION_LIGHT_PULSE,
+            OMNI_BACK_GESTURE_HEIGHT,
         };
 
         /**
@@ -4828,6 +4837,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD);
 	    PRIVATE_SETTINGS.add(NETWORK_TRAFFIC_ARROW);
             PRIVATE_SETTINGS.add(INCALL_FEEDBACK_VIBRATE);
+            PRIVATE_SETTINGS.add(OMNI_BACK_GESTURE_HEIGHT);
         }
 
         /**
@@ -4922,6 +4932,7 @@ public final class Settings {
             VALIDATORS.put(SHOW_BATTERY_PERCENT, SHOW_BATTERY_PERCENT_VALIDATOR);
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE, BOOLEAN_VALIDATOR);
             VALIDATORS.put(INCALL_FEEDBACK_VIBRATE, INCALL_FEEDBACK_VIBRATE_VALIDATOR);
+            VALIDATORS.put(OMNI_BACK_GESTURE_HEIGHT, OMNI_BACK_GESTURE_HEIGHT_VALIDATOR);
         }
 
         /**
